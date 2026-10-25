@@ -382,7 +382,7 @@
             const errorMsg = document.getElementById('error-msg');
             
             pageTotal.textContent = ` / ${totalPages}`;
-            pageInput.value = 'Cover';
+            pageInput.value = 'Bìa';
 
             function applyTransform(targetPage) {
                 if (targetPage === 0) {
@@ -396,9 +396,9 @@
             
             function setInputDisplay(index) {
                 if (index === 0) {
-                    pageInput.value = 'Cover';
+                    pageInput.value = 'Bìa';
                 } else if (index === totalPages - 1) {
-                    pageInput.value = 'Back';
+                    pageInput.value = 'Cuối';
                 } else {
                     pageInput.value = `${index + 1}–${index + 2}`;
                 }
